@@ -22,6 +22,11 @@ Properties can be accessed by dot-notation or using square brackets.
     console.log(person.address.street);                     //'103 Main Street'
     console.log(person["name"]);                            //'John'
     console.log(person["address"]["city"]);                 //'Salt Lake City'
+
+Accessing values that have not been created returns undefined while assigning values can be achieved this way as well:
+
+    person.age = 28;                                        //age value is created and is set to 28
+    console.log(person.middleName);                         //'undefined'
     
     
     
