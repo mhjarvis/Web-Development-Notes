@@ -11,3 +11,4 @@ Declarations can easily cause conflicts. The cascade considers three things to r
     1. Specificities can be further determined by using the id,class,tag notation (0,0,0) depending on what selectors are used. Inline styles (if used) would add another line to the front of the notation.
 3. Source order - order in which styles are declared in the stylesheet.
 
+# Inheritance
