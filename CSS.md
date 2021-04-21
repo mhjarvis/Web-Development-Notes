@@ -11,4 +11,7 @@ Declarations can easily cause conflicts. The cascade considers three things to r
     1. Specificities can be further determined by using the id,class,tag notation (0,0,0) depending on what selectors are used. Inline styles (if used) would add another line to the front of the notation.
 3. Source order - order in which styles are declared in the stylesheet.
 
-# Inheritance
+# Special Values
+Two values can be applied to any property in the cascade: inherit and initital.
+1. Inherit - It specifies that a property should inherit its value from its parent element.
+2. Initial - resets a properties value to the default value.
