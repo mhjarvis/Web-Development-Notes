@@ -15,3 +15,9 @@ Declarations can easily cause conflicts. The cascade considers three things to r
 Two values can be applied to any property in the cascade: inherit and initital.
 1. Inherit - It specifies that a property should inherit its value from its parent element.
 2. Initial - resets a properties value to the default value.
+
+<h1 align=center>----- Relative Units -----</h1>
+CSS incorporates both absolute values (values that always mean the same thing (e.g. pixels)) and relative values (values that can change, based on external factors). 
+
+# Relative Values
+1. ```em``` - ```1em``` means the font size of the current element.This varies depending on the element it is being applied to.
