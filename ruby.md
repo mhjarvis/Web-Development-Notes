@@ -1,72 +1,15 @@
-<h1 align=center>----- Fundamentals -----</h1>
+<h1 align=center>----- Ruby Foundations -----</h1>
 
-# Printing
-  
-    print                   # minimal formating; does not add a new line
-    puts                    # adds new line after every 'puts'
-    p                       # prints data, adds newline, and shows the type of data that was printed
-    
-# Methods
+When talking about Ruby, _Ruby_ refers to the language itself, while _ruby_ refers to the interpreter. The _irb_ (interactive ruby console) is accessable via typing ```irb``` in the terminal. Using ```irb --simple-prompt``` is another option for a cleaner input prompt.
 
-    def someMethod(var1, var2)
-      # code
-      # code
-      return x
-    end
-    
-    someMethod              # or someMethod()
+# Ruby Identifiers
+The following make up the different identifier types found in Ruby:
 
-# Conditionals
-
-    num = 0
-    
-    if num > 0
-      puts 'positive'
-    elsif num < 0
-      puts 'negative'
-    else
-      puts 'zero'
-    end
-
-# Looping
-
-    count = 0
-    
-    whitle count < 5
-      puts counter
-      counter += 1
-    end
-    
-# Enumerable Methods
-
-    people = ["John", "Mike", "Lee"]
-    
-    people.each { |person| puts person }                # prints each name in the array
-    
-    people.each_with_index do |person, i|               # prints name, index, and dashes
-      puts person
-      puts i
-      puts "-----"
-    end
-    
-# String Enumerable Methods
-
-    greeting = "Hello"
-    
-    greeting.each_char { |char| puts chara }            # prints each letter
-    
-    greeting.each_char.with_index do |chr, i|           # print letter, index, and dashes
-      puts char
-      puts i
-      puts "-----"
-    end
-    
-# Other Enumerables
-
-    3.times do                      # prints 'hi' three times
-      puts 'hi'
-    end
-    
-    (2..6).each {|n| puts n}        # prints numbers 2-6
-    (2...6).each {|n| puts n}       # prints 2-5
-    
+1. Variables - 
+    1. Local - variables use ```snake_case``` for variables, starting with lowercase or an underscore. Can include letters, underscores, and/or digits.
+    2. Instance - variables that store information within individual objects always start with the ```@``` sign (e.g. ```@last_name```).
+    3. Class - variables store information per class hierarchy; use double at-signs (e.g. ```@@running_total```).
+    4. Global - variables start with a $ sign (e.g. ```$population``` or ```#FIRST_NAME```). 
+2. Constants - begin with an uppercase letter (e.g. ```A```, ```String```, ```Pi```). The convention is to use either camel case or underscore-seperated all-uppercase words (e.g. ```FirstName``` or ```FIRST_NAME```).
+3. Keywords - reserved words such as ```def```, ```class```, ```if```.
+4. Method names - follow the same rules as local variables except that they can end with ```?```, ```!```, or ```=```.
