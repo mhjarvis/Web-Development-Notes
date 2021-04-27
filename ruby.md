@@ -44,15 +44,22 @@ To create a new file and write data to that file we can:
     fh.puts new_string                          # print value to file
     fh.close                                    # 'fh' in this case is the write handle
     
+### Loading External Files and Extensions
+To facilitate breaking up programs into multiple files, Ruby provides the ```require``` and ```load``` methods. Remember that these are methods, and the ```load``` method will execute when the interpreter encounters that command during execution. The ```load``` method will always load the file asked for, whether it has been loaded before or not. This means if that file is changed, it will override aything in the original version. 
     
+    load "second-ruby-file.rb"                  # load the secondary file
+    load "../extraas.rb"                        # navigate relaaative directories in load commands
     
+    load "/home/users/dblack/book/code/r.rb"    # force load using the direct path
     
+One ofthe major differences of using ```require``` is that it will not reload a file if it has already been loaded. ```require``` is also more abstract, meaning you require a feature. Ruby also appends (for example) the .rb ending to the file name. ```require``` is the day-to-day technique that will be used most often. 
+
+    require "./loadee"                          
     
-    
-    
-    
-    
-    
+##### require_relative
+A final option to load files is to use the ```require_relative``` method. This command loads features by searching relative tot he directory in which the file from which it's called resides. 
+
+    require_relative "loadee"                   # call without the current directory
     
     
     
